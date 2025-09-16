@@ -19,7 +19,7 @@ type Foo struct {
 }
 
 func main() {
-    w, err := warppipe.NewWriter[Custom]()
+    w, err := warppipe.NewWriter[Foo]()
     if err != nil {
         panic(err)
     }
@@ -44,7 +44,7 @@ type Foo struct {
 }
 
 func main() {
-    r, err := warppipe.NewReader[Custom]()
+    r, err := warppipe.NewReader[Foo]()
     if err != nil {
         panic(err)
     }
